@@ -9,7 +9,7 @@ def sniff(interface, n_packet, filename):
 
     with open(filename + '.txt', 'a+') as file:
         for n, pkt in enumerate(capture):
-            file.write("Packet #         " + str(n + 1) + '\n')
+            file.write("Packet #" + str(n + 1) + ':\n')
             file.write(str(pkt) + '\n')
     capture.close()
 
